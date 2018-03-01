@@ -1,0 +1,37 @@
+############################################
+# Fichiers de properties applicatif.
+# Uniquement li� aux configurations applicatives de Spring
+############################################
+
+
+#####################################################################
+# Configuration Spring actuator
+#####################################################################
+management:
+  security:
+    enabled:                            false
+  
+  context-path:                         /actuator
+
+# configuration des endpoints
+endpoints:
+  hypermedia:
+    enabled:                            true
+  actuator:
+    enabled:                            true
+  beans:
+    enabled:                            true
+  env:
+    enabled:                            true
+  metrics:
+    enabled:                            true
+  health:
+    enabled:                            true
+  mappings:
+    enabled:                            true
+  docs:
+    enabled:                            true
+  logfile:
+    enabled:                            true
+
+

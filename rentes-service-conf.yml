@@ -1,3 +1,12 @@
+#config branche
+spring:
+  cloud:
+    config:
+      label:                                            rentes-service
+# config uri
+      uri:                                              http://localhost:8100/config
+
+
 eureka:
   client:
     serviceUrl:

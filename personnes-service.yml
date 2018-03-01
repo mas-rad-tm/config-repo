@@ -38,7 +38,7 @@ endpoints:
 eureka:
   client:
     serviceUrl:
-      defaultZone:      http://localhost:8200/discovery/
+      defaultZone:      http://localhost:8761/eureka/
     registerWithEureka: true
     fetchRegistry:      true
   instance:

@@ -8,7 +8,7 @@
 ###########################
 # mode jar, port et context
 server:
-  port:                              @PORT@
+  port:                              9020
   contextPath:                       /rentes-service
 
 ###########################

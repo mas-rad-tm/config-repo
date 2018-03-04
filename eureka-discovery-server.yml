@@ -14,17 +14,29 @@ eureka:
 #####################################################################
 # Configuration Spring actuator
 #####################################################################
-management.security.enabled=false
-management.context-path=/actuator
+management:
+  security:
+    enabled:                         false
+  context-path:                      /actuator
 # configuration des endpoints
-endpoints.hypermedia.enabled=true
-endpoints.actuator.enabled=true
-endpoints.beans.enabled=true
-endpoints.env.enabled=true
-endpoints.metrics.enabled=true
-endpoints.health.enabled=true
-endpoints.mappings.enabled=true
-endpoints.docs.enabled=true
-endpoints.logfile.enabled=true
+endpoints:
+  hypermedia:
+    enabled:                         true
+  actuator:
+    enabled:                         true
+  beans:
+    enabled:                         true
+  env:
+    enabled:                         true
+  metrics:
+    enabled:                         true
+  health:
+    enabled:                         true
+  mappings:
+    enabled:                         true
+  docs:
+    enabled:                         true
+  logfile:
+    enabled:                         true
 
 

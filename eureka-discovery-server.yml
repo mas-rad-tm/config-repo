@@ -2,7 +2,14 @@
 # Fichiers de properties applicatif.
 # Uniquement li� aux configurations applicatives de Spring
 ############################################
+#désactivation auto-découverte
+eureka:
+  client:
+    register-with-eureka:   false
 
+    fetch-registry:         false
+  instance:
+    hostname: localhost
 
 #####################################################################
 # Configuration Spring actuator

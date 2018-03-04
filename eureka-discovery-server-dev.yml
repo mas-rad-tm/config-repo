@@ -1,0 +1,15 @@
+############################################
+# Fichiers de properties pour le profil DEV
+# Uniquement pour le contexte de d�veloppement
+############################################
+
+###########################
+# Config applicative globale
+###########################
+server:
+  port:                     8761
+
+logging:
+  level:
+    com.netflix.eureka:     OFF
+    com.netflix.discovery:  OFF

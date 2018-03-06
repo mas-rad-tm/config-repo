@@ -51,5 +51,7 @@ ribbon:
   eureka:
     enabled:                                             true
 
+activemq:
+  broker-url: tcp://localhost:61616
 
 

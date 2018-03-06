@@ -52,11 +52,12 @@ ribbon:
     enabled:                                             true
 
 activemq:
-  broker-url: 
+  broker-url: tcp://localhost:61616
 
 elasticsearch:
   clustername: docker-cluster
   host: localhost
   port: 9300
+
 
 

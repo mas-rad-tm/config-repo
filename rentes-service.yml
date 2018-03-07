@@ -33,31 +33,3 @@ endpoints:
     enabled:                            true
   logfile:
     enabled:                            true
-
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone:                                      http://localhost:8300/eureka/
-    registerWithEureka:                                 true
-    fetchRegistry:                                      true
-    healthcheck:
-      enabled:                                          true
-  instance:
-    leaseRenewalIntervalInSeconds:                      1
-    leaseExpirationDurationInSeconds:                   2
-
-ribbon:
-  eureka:
-    enabled:                                             true
-
-activemq:
-  broker-url: tcp://localhost:61616
-
-elasticsearch:
-  clustername: docker-cluster
-  host: localhost
-  port: 9300
-
-
-

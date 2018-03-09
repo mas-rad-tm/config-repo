@@ -7,7 +7,8 @@ hibernate:
   username:                       db2inst1
   password:                       db2inst1-pwd
   dialect:                        org.hibernate.dialect.DB2Dialect
+  jdbc.batch_size:                1000
   hbm2ddl:        
-    auto:                         create-drop
+    auto:                         update
   show:
     sql:                          true                

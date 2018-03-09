@@ -60,4 +60,10 @@ elasticsearch:
   port: 9300
 
 
+hystrix:
+  default:
+    execution:
+      isolation:
+        thread:
+          timeoutInMilliseconds:                       60000
 

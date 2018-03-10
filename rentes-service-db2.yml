@@ -9,6 +9,6 @@ hibernate:
   dialect:                        org.hibernate.dialect.DB2Dialect
   jdbc.batch_size:                1000
   hbm2ddl:        
-    auto:                         update
+    auto:                         create
   show:
     sql:                          true                

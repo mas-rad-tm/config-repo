@@ -9,15 +9,6 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: personnes-service-v2
-        uri: lb://personnes-service
-        predicates:
-        - Path=/personnes/**
-        - Header=X-migration, 1
-        - Weight=per1, 0
-        filters:
-          - StripPrefix=1
-
       - id: personnes-service
         uri: lb://personnes-service
         predicates:
@@ -26,6 +17,14 @@ spring:
         filters:
           - StripPrefix=1
 
+      - id: personnes-service-v2
+        uri: lb://personnes-service
+        predicates:
+        - Path=/personnes/**
+        - Weight=per1, 0
+        filters:
+          - StripPrefix=1
+          
       - id: rentes-service
         uri: http://localhost:9020
         predicates:

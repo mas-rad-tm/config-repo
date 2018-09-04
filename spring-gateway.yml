@@ -13,8 +13,8 @@ spring:
         uri: lb://personnes-service
         predicates:
         - Path=/personnes/**
-        - Weight=per1, 10
         - Header=X-migration, 1
+        - Weight=per1, 10
         filters:
           - StripPrefix=1
 

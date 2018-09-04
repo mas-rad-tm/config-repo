@@ -13,7 +13,7 @@ spring:
         uri: http://localhost:9010
         predicates:
         - Path=/personnes/**
-        - Weight=per1, 90
+        - Weight=per1, 50
         filters:
           - StripPrefix=1
 
@@ -21,7 +21,7 @@ spring:
         uri: http://localhost:9012
         predicates:
         - Path=/personnes/**
-        - Weight=per1, 10
+        - Weight=per1, 50
         filters:
           - StripPrefix=1
 

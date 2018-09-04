@@ -14,7 +14,7 @@ spring:
         predicates:
         - Path=/personnes/**
         - Header=X-migration, 1
-        - Weight=per1, 10
+        - Weight=per1, 0
         filters:
           - StripPrefix=1
 
@@ -22,7 +22,7 @@ spring:
         uri: lb://personnes-service
         predicates:
         - Path=/personnes/**
-        - Weight=per1, 90
+        - Weight=per1, 100
         filters:
           - StripPrefix=1
 

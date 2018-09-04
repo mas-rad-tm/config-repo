@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: personnes-service
+        uri: http://localhost:9010
+        predicates:
+        - Path=/personnes/**
+        - Weight=per1, 90
+
+      - id: personnes-service-v2
+        uri: http://localhost:9012
+        predicates:
+        - Path=/personnes/**
+        - Weight=per1, 90
+      - id: rentes-service
+        uri: http://localhost:9010
+        predicates:
+        - Path=/rentes/**
+
+

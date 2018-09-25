@@ -9,14 +9,14 @@ spring:
   cloud:
     gateway:
       routes:
-      # - id: personnes-service-v2
-      #  uri: http://localhost:9012
-      #  predicates:
-      #  - Header=X-migration, 1
-      #  - Path=/personnes/**
-      #  - Weight=per1, 20
-      #  filters:
-      #    - StripPrefix=1
+       - id: personnes-service-v2
+        uri: http://localhost:9012
+        predicates:
+        - Header=X-migration, 1
+        - Path=/personnes/**
+        - Weight=per1, 20
+        filters:
+          - StripPrefix=1
           
       - id: personnes-service
         uri: lb://personnes-service
